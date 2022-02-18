@@ -15,6 +15,7 @@ stages {
     stage('Creating Artifact'){
         steps{
             archiveArtifacts artifacts: '**', excludes: 'Jenkinsfile', followSymlinks: false
+            sh 'pwd' 
         }
     }
 
